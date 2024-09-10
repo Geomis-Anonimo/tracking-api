@@ -7,7 +7,7 @@ A API tem como objetivo fazer a conexão com os serviços das empresas parceiras
 ### Solicitação de Token
 
 - **Método**: `POST`
-- **Endpoint**: `http://192.168.253.141:3000/auth/login`
+- **Endpoint**: `http://localhost:3000/auth/login`
 
 #### Body:
 
@@ -27,7 +27,7 @@ No campo Body, as informações de “username” e “password” deveriam ser 
 #### Dados cURL:
 ```curl
 curl --request POST \
-  --url http://192.168.253.141:3000/auth/login \
+  --url http://localhost:3000/auth/login \
   --header 'Content-Type: application/json' \
   --data '{
     "username": "usuario.exemplo",
@@ -44,7 +44,7 @@ curl --request POST \
 ### Solicitação de informações de rastreio:
 Aqui seriam as informações de rastreio que seriam trazidas da API de rastreio.
 - **Método**: `POST`
-- **Endpoint**: `http://192.168.253.141:3000/tracking`
+- **Endpoint**: `http://localhost:3000/tracking`
 
 ### Body:
 ```curl
@@ -61,7 +61,7 @@ Aqui seriam as informações de rastreio que seriam trazidas da API de rastreio.
 #### Dados cURL:
 ```curl
 curl --request POST \
-  --url http://192.168.253.141:3000/tracking \
+  --url http://localhost:3000/tracking \
   --header 'Authorization: Bearer <TOKEN_GERADO_NO_ENDPOINT_DE_SOLICITAÇÃO_DE_TOKEN>'\
   --header 'Content-Type: application/json' \
   --data '{
@@ -73,7 +73,7 @@ curl --request POST \
 
 ### Solicitação de Token
 - **Método**: `POST`
-- **Endpoint**: `http://192.168.253.141:3000/auth/login`
+- **Endpoint**: `http://localhost:3000/auth/login`
 
 ### Body:
 ```json
@@ -92,7 +92,7 @@ No campo Body, as informações de “username” e “password” deveriam ser 
 #### Dados cURL:
 ```curl
 curl --request POST \
-  --http://192.168.253.141:3000/auth/login \
+  --http://localhost:3000/auth/login \
   --header 'Content-Type: application/json' \
   --data '{
   "username": "usuário.exemplo",
@@ -109,7 +109,7 @@ curl --request POST \
 ### Solicitação de informações de rastreio:
 Aqui seriam as informações de rastreio que seriam trazidas da segunda API de rastreio.
 - **Método**: `POST`
-- **Endpoint**: `http://192.168.253.141:3000/tracking-correios`
+- **Endpoint**: `http://localhost:3000/tracking-correios`
 
 #### Body:
 ```curl
@@ -127,7 +127,7 @@ Aqui seriam as informações de rastreio que seriam trazidas da segunda API de r
 #### Dados cURL:
 ```curl
 curl --request POST \
-  --url http://192.168.253.141:3000/tracking-correios \
+  --url http://localhost:3000/tracking-correios \
   --header 'Authorization: Bearer <TOKEN_GERADO_NO_ENDPOINT_DE_SOLICITAÇÃO_DE_TOKEN>'\
   --header 'Content-Type: application/json' \
   --data '{
